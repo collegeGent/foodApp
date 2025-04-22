@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/litera.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    {% include 'modules/navbar.html' %}
+    {% block content %}
+    <h1>Oops you managed to find the wrong page!</h1>
+    {% endblock %}
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    {% if cardanim == True %}
+        {% include 'modules/cardanim.html' %}
+    {% endif %}
+</body>
+</html>

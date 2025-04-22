@@ -1,0 +1,27 @@
+@font-face {
+    font-family: dmserif;
+    src: url('../fonts/DMSerifText-Regular.ttf');
+}
+nav{
+    font-family: dmserif;
+}
+.card{
+    opacity: 0;
+}
+
+.card.animate {
+	animation: fade-me-in 0.5s forwards;
+}
+
+@keyframes fade-me-in {
+  0% {opacity:0;
+    transform: translate(-50px);}
+  50% {
+        opacity:0;
+        transform: translate(-50px);
+    }
+  100% {
+    opacity:1;
+    transform: translate(0px);
+}
+}
